@@ -1,0 +1,14 @@
+import sympy
+x=sympy.Symbol('x')
+y=sympy.Symbol('y')
+R=sympy.Symbol('R')
+T=sympy.Symbol('T')
+Vm=sympy.Symbol('Vm')
+p=sympy.Symbol('p')
+a=sympy.Symbol('a')
+b=sympy.Symbol('b')
+f=R*T*Vm/(Vm-b)-a/Vm
+print(sympy.diff(f,Vm))
+print(sympy.solve([x + 5*y - 2, -3*x + 6*y - 15], [x, y]))
+'''f=R*T*sympy.exp(-a/(R*T*Vm))/(Vm-b)
+print(sympy.solve([sympy.diff(f,Vm),sympy.diff(f,Vm,2)],[Vm,T]))'''
