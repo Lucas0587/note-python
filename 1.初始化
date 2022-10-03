@@ -4,6 +4,7 @@
   3、代入自变量的数值
 '''
 
+import sympy
 from sympy import *
 x=Symbol('x')       #初始化符号
 y=Symbol('y')
