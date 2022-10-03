@@ -1,0 +1,15 @@
+'''
+  1、定义变量符号
+  2、定义函数：+、-、*、/、**、log、exp、sqrt、root、……
+  3、代入自变量的数值
+'''
+
+from sympy import *
+x=Symbol('x')       #初始化符号
+y=Symbol('y')
+f=x**2+y**2+x/2         #初始化函数f(x)
+g=sympy.log(x)+sympy.sqrt(x)+sympy.root(y,3)+sympy.exp(y)
+h=sympy.factorial(4)+sympy.sin(sympy.pi/3)
+print(" f=",f,"\t","g=",g,"\t","h= sin(π/3) + 4! =",h)
+f_x=f.evalf(subs={x:2})     #代入数值
+print("x=2时,f =",f_x)
