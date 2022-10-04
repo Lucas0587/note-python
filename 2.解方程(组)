@@ -9,5 +9,6 @@ h=6*y-5*z+1
 print("1、显函数方程，例如：sin(x) + cos(x) = 1，解得：x =",sy.solve(f,x))
 print("  再例如 x**2 + x + 1 =0，解得：x =",sy.solve(x**2 + x + 1,x))
 print("\t 若需要指定值范围，可使用solveset，例如sy.solveset(x**2 + x - 1,x,Interval(0, 50))，得：",sy.solveset(x**2 + x - 1,x,Interval(0, 50)))
+print("\t 简单的隐函数解方程也可实现，例如 y**2+z**2=25，解得：",sy.solve(y**2+z**2-25,z,y))
 print("2、显函数方程组，例如：5y+3z=2 & 6y-5z=-1 ，解得：",sy.solve([g,h],[y,z]))
 print("3、微分方程在导数介绍完之后再介绍")
